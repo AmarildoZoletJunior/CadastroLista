@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+.cadastro-topo{
+    width: 100%;
+    height: 15%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cadastro-corpo{
+    overflow: hidden;
+    width: 80%;
+    height: 85%;
+    margin: auto;
+    background-color: white;
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    flex-direction: column;
+    width:  100%;
+    min-width: 150px;
+    min-height: 200px;
+    height: 10%;
+    background-color: white;
+}
+.input-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 40%;
+    border-radius: 10px;
+    position: relative;
+}
+.input-form input{
+    border-radius:5px;
+    height: 30px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    min-width: 200px;
+    width: 100%;
+    border: 2px solid black
+}
+.submit{
+    background-color: rgb(4, 200, 4);
+    color: white;
+    border-radius: 5px;
+    min-width:150px;
+    min-height: 50px;
+    cursor: pointer;
+    border: none;
+}
+.input-form i{
+    position: absolute;
+    top: 30px;
+    right: 9px;
+    visibility: hidden;
+}
+.lista-corpo{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    height: 55%;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.item{
+    width: 100%;
+    background-color: aqua;
+    height: 58px;
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+    border-bottom: 2px solid black;
+}
+.item i.fa-pen-to-square{
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    cursor: pointer;
+}
+.item i.fa-xmark{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    color: red;
+}
+.modal{
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    transform: scale(1.2);
+    /* opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0,25s ease-in-out; */
+}
+.modal-content{
+    border-radius: 15px;
+    background-color: whitesmoke;
+    min-width: 300px;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+}
+.modal-content i.fa-solid.fa-xmark{
+    top: 10px;
+    right: 0px;
+    left: 150px;
+    width: 20px;
+    height: 18px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    line-height: 18px;
+}
+.modal-content i.fa-solid.fa-xmark:hover{
+    background-color: #a2b9bc;
+    border-radius: 3px;
+}
+.submit-modal{
+    width: 150px;
+    margin: auto;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.modal-form{
+    font-size: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 60px;
+}
+.modal-form i{
+    position: absolute;
+    top: 27px;
+    right: 10px;
+    visibility: hidden;
+}
+.modal-form input{
+    border-radius: 5px;
+    box-sizing: 0 0 0 0;
+    outline: 0;
+}
+.modal-form small{
+    visibility: hidden;
+    font-size: 10px;
+}
+.modal-form.error i.fa-exclamation{
+    visibility: visible;
+    color: red;
+}
+.modal-form.error small{
+    visibility: visible;
+    color: red;
+}
+.modal-form.error input{
+    border: 2px solid red;
+}
+.modal-form.error p{
+    color: red;
+}
+.modal-form.sucess input{
+    border: 2px solid rgb(33, 216, 33);
+}
+.modal-form.sucess p{
+    color: rgb(33, 216, 33);;
+}
+.modal-form.sucess i.fa-check{
+    visibility: visible;
+    color: rgb(33, 216, 33);;
+}
+
+
+
+
+
+.input-form small{
+    visibility: hidden;
+}
+.input-form.error i.fa-exclamation{
+    visibility: visible;
+    color: red;
+}
+.input-form.error small{
+    visibility: visible;
+    color: red;
+}
+.input-form.error input{
+    border: 2px solid red;
+}
+.input-form.error p{
+    color: red;
+}
+.input-form.sucess input{
+    border: 2px solid rgb(33, 216, 33);
+}
+.input-form.sucess p{
+    color: rgb(33, 216, 33);;
+}
+.input-form.sucess i.fa-check{
+    visibility: visible;
+    color: rgb(33, 216, 33);;
+}
